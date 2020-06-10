@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue 动态数据更新</title>
+    <script src="conf/mvvm.js"></script>
+    <script src="conf/observe.js"></script>
+    <script src="conf/dep.js"></script>
+    <script src="conf/watcher.js"></script>
+    <script src="conf/compile.js"></script>
+    
+</head>
+<body>
+    <div id='app'>
+        {{ name1 }}{{ inputValue }}
+        <p @click=""></p>
+        <input v-model="inputValue" />
+    </div>    
+    <script>
+         let vm = new MVVM({
+            el: '#app',
+            data: {
+                name1: 'hhhhhh',
+                value2: 'hahaha',
+                inputValue: '555'
+            }
+        })
+    </script>
+</body>
+</html>
